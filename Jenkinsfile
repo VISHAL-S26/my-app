@@ -3,14 +3,14 @@ pipeline {
 
     environment {
         DOCKERHUB_CREDENTIALS = credentials('dockerhub-creds')
-        IMAGE_NAME = "yourdockerhubusername/my-app"
+        IMAGE_NAME = "vishal262000/my-app"
         IMAGE_TAG = "latest"
     }
 
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'main', url: 'https://github.com/yourusername/my-app.git'
+                git branch: 'main', url: 'https://github.com/VISHAL-S26/my-app.git'
             }
         }
 
